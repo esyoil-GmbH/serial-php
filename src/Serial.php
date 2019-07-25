@@ -35,9 +35,9 @@ class Serial {
         $command = sprintf( "stty -F %s %d cs%d", $this->port, $this->baud, $this->dataBits );
         $command .= " ignbrk -brkint -imaxbel -opost -onlcr -isig -icanon -iexten";
         $command .= " -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts";
-        if ( $this->StopBits == 1 ) {
+        if ( $this->stopBits == 1 ) {
             $command .= " -cstopb";
-        } else if ( $this->StopBits == 2 ) {
+        } else if ( $this->stopBits == 2 ) {
             $command .= " cstopb";
         }
     
