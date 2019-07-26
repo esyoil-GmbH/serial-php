@@ -2,7 +2,7 @@
     "name": "esyoilgmbh/serial-php",
     "description": "A modern library to communicate with serial devices",
     "type": "library",
-    "license": "GNU GLPv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Bennet Gallein",
